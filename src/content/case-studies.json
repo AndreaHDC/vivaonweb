@@ -1,0 +1,111 @@
+{
+  "pinacoteca-di-brera": {
+    "title": "Una nuova presenza digitale per il museo.",
+    "sections": [
+      {
+        "title": "Dall’ingresso nel museo alla scoperta delle opere",
+        "text": "Il sito presenta tre momenti della navigazione: l’ingresso nel museo, l’esplorazione dei capolavori e l’approfondimento di una singola opera. Un percorso che mette in relazione la visione d’insieme delle collezioni e i dettagli di ogni lavoro."
+      },
+      {
+        "title": "Una collaborazione nel tempo",
+        "text": "Il progetto prosegue un percorso che comprende il precedente sito della Pinacoteca, con contenuti sulle collezioni, sulle attività e sui restauri, immagini ad alta definizione e video."
+      },
+      {
+        "title": "Bottega Brera",
+        "text": "Per il design e bookstore della Pinacoteca abbiamo ideato il nome Bottega Brera, disegnato il marchio e curato il visual design del locale. Un intervento che porta il racconto del museo nello spazio fisico, attraverso identità, immagini e parole."
+      }
+    ],
+    "images": []
+  },
+  "palazzo-citterio": {
+    "title": "Dal sito agli spazi del museo",
+    "sections": [
+      {
+        "title": "Orientarsi nel museo",
+        "text": "Il lavoro è proseguito con la grafica museale e il wayfinding: una segnaletica pensata per rendere il percorso espositivo più leggibile e intuitivo. Dal sito agli spazi, due interventi distinti che accompagnano l’incontro tra il pubblico e il museo."
+      }
+    ],
+    "images": [
+      "/projects/palazzo-citterio-detail-1.jpg"
+    ]
+  },
+  "cenacolo-vinciano": {
+    "title": "Un racconto che continua online",
+    "sections": [
+      {
+        "title": "Dare voce al museo",
+        "text": "Abbiamo realizzato il video teaser del sito. L’archivio documenta inoltre un successivo lavoro sui canali social, in collaborazione con il museo: contenuti che raccontano il patrimonio e invitano il pubblico a partecipare alla sua conoscenza."
+      }
+    ],
+    "images": [
+      "/projects/cenacolo-vinciano-detail-1.jpg"
+    ]
+  },
+  "biblioteca-braidense": {
+    "title": "Collezioni e attività da scoprire online",
+    "sections": [
+      {
+        "title": "La programmazione a colpo d’occhio",
+        "text": "Abbiamo realizzato un calendario degli eventi per consultare le attività in programma e pianificare una visita. La vita della biblioteca trova così uno spazio dedicato accanto al racconto delle sue raccolte."
+      }
+    ],
+    "images": []
+  },
+  "poldi-pezzoli": {
+    "title": "Il museo, dal digitale ai materiali di visita",
+    "sections": [
+      {
+        "title": "Un nuovo sito per il museo",
+        "text": "Nel 2024 l’archivio di Viva! documenta anche il nuovo sito del museo. Un intervento digitale che si affianca ai materiali di visita e apre un altro punto di accesso al racconto delle collezioni."
+      },
+      {
+        "title": "Piero della Francesca: l’identità di una mostra",
+        "text": "Per la mostra dedicata al Polittico agostiniano riunito abbiamo curato visual identity, design e video teaser. Un progetto distinto, da raccontare attraverso i suoi materiali e la sua identità visiva."
+      }
+    ],
+    "images": [
+      "/projects/poldi-pezzoli-detail-0.jpg",
+      "/projects/poldi-pezzoli-detail-1.jpg",
+      "/projects/poldi-pezzoli-detail-2.jpg"
+    ]
+  },
+  "palazzo-boncompagni": {
+    "title": "Identità e comunicazione per le mostre",
+    "sections": [
+      {
+        "title": "Aldo Mondino. Impertinenze a Palazzo",
+        "text": "Nel 2023 il lavoro ha accompagnato la mostra di Aldo Mondino: dall’identità ai materiali editoriali, fino alle campagne e ai contenuti social."
+      },
+      {
+        "title": "Mimmo Paladino nel Palazzo del Papa",
+        "text": "Nel 2024 abbiamo lavorato alla comunicazione della mostra di Mimmo Paladino, con logo, visual, catalogo, advertising e social. Le due esposizioni offrono un’occasione per mostrare come un progetto prenda forma su supporti diversi."
+      }
+    ],
+    "images": [
+      "/projects/palazzo-boncompagni-detail-0.jpg",
+      "/projects/palazzo-boncompagni-detail-1.jpg"
+    ]
+  },
+  "galleria-cavour": {
+    "title": "Identità, arte e comunicazione",
+    "sections": [
+      {
+        "title": "L’arte sulla facciata",
+        "text": "L’archivio documenta inoltre la comunicazione digitale e il video realizzati da Viva! per l’intervento di Pietro Terzini sulla facciata della galleria. Un lavoro di racconto dell’opera e del suo incontro con lo spazio urbano."
+      }
+    ],
+    "images": [
+      "/projects/galleria-cavour-detail-1.jpg"
+    ]
+  },
+  "explora": {
+    "title": "Un sito per scoprire, giocare e imparare",
+    "sections": [
+      {
+        "title": "Raccontare le possibilità della scoperta",
+        "text": "Allestimenti, attività e laboratori sono al centro del racconto del museo. Il sito presenta questo mondo di esperienze e offre un primo incontro con la sua proposta educativa."
+      }
+    ],
+    "images": []
+  }
+}

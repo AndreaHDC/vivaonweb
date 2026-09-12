@@ -1,0 +1,6 @@
+backup/
+discovery/
+scripts/
+.git/
+.env*
+*.tsbuildinfo
