@@ -24,6 +24,7 @@ export function SiteDocument({ children, locale }: Readonly<{ children: React.Re
         <Script id="iubenda-config" strategy="beforeInteractive">{"window._iub = window._iub || []; window._iub.csConfiguration = {\"invalidateConsentWithoutLog\":true,\"consentOnContinuedBrowsing\":false,\"perPurposeConsent\":true,\"lang\":\"it\",\"siteId\":1511114,\"floatingPreferencesButtonDisplay\":\"bottom-right\",\"cookiePolicyId\":46288755,\"banner\":{\"acceptButtonDisplay\":true,\"customizeButtonDisplay\":true,\"acceptButtonColor\":\"#fb9100\",\"acceptButtonCaptionColor\":\"white\",\"customizeButtonColor\":\"#212121\",\"customizeButtonCaptionColor\":\"white\",\"rejectButtonDisplay\":true,\"rejectButtonColor\":\"rgba(213.07, 156.89, 80.04, 0.72)\",\"rejectButtonCaptionColor\":\"white\",\"position\":\"top\",\"textColor\":\"#dadada\",\"backgroundColor\":\"#5A5A5A\",\"closeButtonDisplay\":false,\"listPurposes\":true,\"explicitWithdrawal\":true}};"}</Script>
         <Script src="https://cdn.iubenda.com/cs/iubenda_cs.js" strategy="beforeInteractive" />
         <SmoothScroll />{children}
+        <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
       </body>
     </html>
   );
