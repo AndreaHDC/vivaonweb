@@ -16,7 +16,7 @@ export const copy = {
       { title: "Contenuti e campagne", text: "Video, storytelling, social e advertising. Per portare le storie verso il loro pubblico." },
     ],
     next: "Il prossimo progetto", conversation: "Comincia da una conversazione.", contact: ["Facciamo spazio", "alla prossima idea"], footer: "Comunicazione, design e sviluppo web. Milano.", top: "Torna all’inizio", read: "Leggi il progetto", close: "Seleziona di nuovo il titolo per chiudere.", logo: "Viva! — Fresh Squeezed Ideas, logo originale con arancia",
-    title: "Viva! — Studio di comunicazione e design", description: "Identità, siti ed esperienze digitali per musei, istituzioni culturali e imprese. Scopri i progetti di Viva!, studio di comunicazione e design a Milano.",
+    title: "Viva! — Studio di comunicazione, design e sviluppo web", description: "Identità, siti ed esperienze digitali per musei, istituzioni culturali e imprese. Scopri i progetti di Viva!, studio di comunicazione, design e sviluppo web a Milano.",
   },
   en: {
     skip: "Skip to content", nav: "Main navigation", projects: "Projects", studio: "Studio", talk: "Let’s talk",
@@ -34,6 +34,6 @@ export const copy = {
       { title: "Content and campaigns", text: "Video, storytelling, social media and advertising. Bringing stories to their audiences." },
     ],
     next: "The next project", conversation: "Starts with a conversation.", contact: ["Make room", "for the next idea"], footer: "Communication, design and web development. Milan.", top: "Back to top", read: "About the project", close: "Select the title again to close.", logo: "Viva! — Fresh Squeezed Ideas, original orange logo",
-    title: "Viva! — Communication and design studio", description: "Identities, websites and digital experiences for museums, cultural institutions and businesses. Explore the work of Viva!, a communication and design studio in Milan.",
+    title: "Viva! — Communication, design and web development studio", description: "Identities, websites and digital experiences for museums, cultural institutions and businesses. Explore the work of Viva!, a communication, design and web development studio in Milan.",
   },
 } as const;

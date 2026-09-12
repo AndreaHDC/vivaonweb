@@ -14,12 +14,12 @@ export function homeMetadata(locale: Locale): Metadata {
       canonical: url,
       languages: { it: "https://vivaonweb.com/", en: "https://vivaonweb.com/en", "x-default": "https://vivaonweb.com/" },
     },
-    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-og.jpg", width: 1200, height: 630, alt: "Viva! — Comunicazione e design" }], title: text.title, description: text.description, url, siteName: "Viva!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
+    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-og.jpg", width: 1200, height: 630, alt: "Viva! — Comunicazione, design e sviluppo web" }], title: text.title, description: text.description, url, siteName: "Viva!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
   };
 }
 
 export function studioMetadata(locale: Locale): Metadata {
-  const title = locale === "it" ? "Studio — Viva! | Comunicazione e design" : "Studio — Viva! | Communication and design";
+  const title = locale === "it" ? "Studio — Viva! | Comunicazione, design e sviluppo web" : "Studio — Viva! | Communication, design and web development";
   const description = copy[locale].about;
   const it = "https://vivaonweb.com/studio";
   const en = "https://vivaonweb.com/en/studio";
@@ -33,7 +33,7 @@ export function studioMetadata(locale: Locale): Metadata {
 
 export function contactMetadata(locale: Locale): Metadata {
  const title=locale === "it" ? "Contatti — Viva! | Parliamo del tuo progetto" : "Contact — Viva! | Let’s talk about your project";
- const description=locale === "it" ? "Raccontaci la tua idea. Contatta Viva!, studio di comunicazione e design a Milano." : "Tell us about your idea. Contact Viva!, a communication and design studio in Milan.";
+ const description=locale === "it" ? "Raccontaci la tua idea. Contatta Viva!, studio di comunicazione, design e sviluppo web a Milano." : "Tell us about your idea. Contact Viva!, a communication, design and web development studio in Milan.";
  const it="https://vivaonweb.com/contatti",en="https://vivaonweb.com/en/contatti",url=locale === "it" ? it : en;
  return {...homeMetadata(locale),title,description,alternates:{canonical:url,languages:{it,en,"x-default":it}},openGraph:{...homeMetadata(locale).openGraph,title,description,url,images:[{url:"https://vivaonweb.com/hero/viva-contact-v2.png"}]},twitter:{card:"summary_large_image",images:["https://vivaonweb.com/hero/viva-contact-v2.png"]}};
 }

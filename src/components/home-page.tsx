@@ -1,3 +1,4 @@
+import { StructuredData } from "./structured-data";
 import Image from "next/image";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
@@ -14,7 +15,7 @@ export function HomePage({ locale }: { locale: Locale }) {
     <>
       <a href="#main" className="skip-link">{t.skip}</a>
       <SiteHeader locale={locale} overlay />
-      <main tabIndex={-1} id="main">
+      <StructuredData locale={locale} page="home" /><main tabIndex={-1} id="main">
         <section className="hero hero-video" aria-labelledby="hero-title">
           <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-sculptural-v1.png" alt="" fill sizes="100vw" preload /></div>
           <div className="hero-content shell">

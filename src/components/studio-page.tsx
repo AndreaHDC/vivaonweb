@@ -1,3 +1,4 @@
+import { StructuredData } from "./structured-data";
 import Image from "next/image";
 import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
@@ -35,7 +36,7 @@ export function StudioPage({ locale }: { locale: Locale }) {
   const t = copy[locale]; const s = studioCopy[locale];
   return <>
     <a href="#main" className="skip-link">{t.skip}</a><SiteHeader locale={locale} />
-    <main tabIndex={-1} id="main" className="studio-page">
+    <StructuredData locale={locale} page="studio" /><main tabIndex={-1} id="main" className="studio-page">
       <section className="studio-opening studio-image-opening" aria-labelledby="studio-page-title">
         <Image src="/hero/viva-studio-v1.png" alt="" fill sizes="100vw" preload className="studio-hero-image" />
         <div className="shell studio-hero-content">
