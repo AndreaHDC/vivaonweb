@@ -150,3 +150,8 @@ html.lenis,html.lenis body{scroll-behavior:auto!important}
 @media(max-width:700px){.case-pair .case-cover,.case-pair .case-detail{max-width:100%}}
 
 .case-next{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);padding-block:45px 65px}.case-next>div>span{font-size:14px}.case-next a{font-size:clamp(20px,2.1vw,30px);margin-top:12px;padding-bottom:18px;align-items:baseline;font-weight:600}.case-next a>span[aria-hidden]{flex-shrink:0}@media(max-width:700px){.case-next{grid-template-columns:1fr;gap:30px}}
+
+/* Visible keyboard targets; brand colors preserved. */
+.language-switch a{min-width:28px;text-align:center}
+#main:focus{outline:none}
+.project-card-link:focus-visible .project-action{opacity:1;transform:none}

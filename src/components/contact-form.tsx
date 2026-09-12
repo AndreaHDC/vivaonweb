@@ -10,9 +10,10 @@ export function ContactForm({ locale }: { locale: Locale }) {
   try { const response=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.fromEntries(values))}); if(!response.ok)throw new Error(); setStatus("success");form.reset(); } catch {setStatus("error");}
  }
  return <form className="contact-form" onSubmit={submit} aria-busy={status === "sending"}>
+  <p className="contact-form-note">{it?"Nome, email e messaggio sono obbligatori.":"Name, email and message are required."}</p>
   <div className="contact-fields"><label>{it?"Nome":"Name"}<input name="name" autoComplete="name" required maxLength={100}/></label><label>Email<input name="email" type="email" autoComplete="email" required maxLength={254}/></label></div>
   <label>{it?"Organizzazione (facoltativo)":"Organisation (optional)"}<input name="organisation" autoComplete="organization" maxLength={150}/></label>
-  <label>{it?"Raccontaci la tua idea":"Tell us about your idea"}<textarea name="message" required minLength={10} maxLength={5000} rows={6}/></label>
+  <label>{it?"Raccontaci la tua idea":"Tell us about your idea"}<textarea aria-describedby="message-help" name="message" required minLength={10} maxLength={5000} rows={6}/></label><p id="message-help" className="contact-form-note">{it?"Da 10 a 5.000 caratteri.":"Between 10 and 5,000 characters."}</p>
   <div className="contact-trap" aria-hidden="true"><label>Website<input name="website" tabIndex={-1} autoComplete="off"/></label></div>
   <p className="contact-form-note">{it?"Usiamo i dati che ci invii per rispondere alla tua richiesta. Il modulo inoltra il messaggio via email, senza salvarlo in un database del sito.":"We use the information you send to respond to your enquiry. This form forwards your message by email without saving it in a website database."}</p>
   <button className="contact-submit" disabled={status === "sending"} type="submit">{status === "sending" ? (it?"Invio in corso…":"Sending…") : (it?"Invia il messaggio":"Send message")} <span aria-hidden="true">↗</span></button>

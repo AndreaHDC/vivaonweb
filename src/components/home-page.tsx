@@ -14,7 +14,7 @@ export function HomePage({ locale }: { locale: Locale }) {
     <>
       <a href="#main" className="skip-link">{t.skip}</a>
       <SiteHeader locale={locale} overlay />
-      <main id="main">
+      <main tabIndex={-1} id="main">
         <section className="hero hero-video" aria-labelledby="hero-title">
           <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-sculptural-v1.png" alt="" fill sizes="100vw" preload /></div>
           <div className="hero-content shell">
