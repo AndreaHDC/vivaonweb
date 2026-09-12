@@ -6,11 +6,11 @@ import { copy, type Locale } from "@/content/translations";
 const studioCopy = {
   it: {
     title: ["Occhi nuovi.", "Idee condivise."],
-    intro: "Comunicazione, design e cultura. Per dare alle storie una forma che le persone possano riconoscere, esplorare e vivere.",
+    intro: "Comunicazione, design e sviluppo web per la cultura e le imprese. Diamo alle storie una forma da riconoscere, esplorare e vivere.",
     people: "Due nomi, uno studio.",
     approach: "Il nostro approccio", question: "Ogni storia merita la sua forma.",
     text: "Un sito, l’identità di una mostra, una campagna o un percorso museale sono occasioni diverse per affrontare la stessa domanda: come rendere una storia comprensibile, riconoscibile e capace di suscitare interesse?",
-    collaboration: "Uniamo progettazione visiva, sviluppo e contenuti, lavorando insieme ai committenti e ai professionisti coinvolti per dare coerenza alle diverse parti del progetto.",
+    collaboration: "Uniamo progettazione visiva, sviluppo web e contenuti, lavorando insieme ai committenti e ai professionisti coinvolti per dare coerenza alle diverse parti del progetto.",
     principles: [
       { title: "Ascoltare.", text: "Partire dalle storie, dal contesto e dalle persone a cui ci rivolgiamo. Capire cosa conta, prima di scegliere come raccontarlo." },
       { title: "Dare forma.", text: "Mettere in relazione parole, immagini e strumenti. Cercare un linguaggio chiaro, capace di esprimere l’identità di ogni progetto." },
@@ -19,11 +19,11 @@ const studioCopy = {
   },
   en: {
     title: ["Fresh eyes.", "Shared ideas."],
-    intro: "Communication, design and culture. Giving stories a form that people can recognise, explore and experience.",
+    intro: "Communication, design and web development for culture and business. Giving stories a form that people can recognise, explore and experience.",
     people: "Two names, one studio.",
     approach: "Our approach", question: "Every story deserves its own form.",
     text: "A website, an exhibition identity, a campaign or a museum trail: different opportunities to explore the same question. How can we make a story clear, distinctive and engaging?",
-    collaboration: "We bring visual design, development and content together, working with clients and the professionals involved to make the different parts of a project feel coherent.",
+    collaboration: "We bring visual design, web development and content together, working with clients and the professionals involved to make the different parts of a project feel coherent.",
     principles: [
       { title: "Listen.", text: "Start with the stories, the context and the people we want to reach. Understand what matters before deciding how to tell it." },
       { title: "Shape.", text: "Connect words, images and tools. Find a clear language that expresses the identity of each project." },
