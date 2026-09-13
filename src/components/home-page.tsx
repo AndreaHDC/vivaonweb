@@ -17,7 +17,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       <SiteHeader locale={locale} overlay />
       <StructuredData locale={locale} page="home" /><main tabIndex={-1} id="main">
         <section className="hero hero-video" aria-labelledby="hero-title">
-          <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-sculptural-v1.png" alt="" fill sizes="100vw" preload /></div>
+          <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-home-v2.png" alt="" fill sizes="100vw" preload /></div>
           <div className="hero-content shell">
           <div className="eyebrow"><span>{t.ideas}</span><span>{t.city}</span></div>
           <h1 id="hero-title"><span className="hero-line">{t.headline[0]}</span><span className="hero-line">{t.headline[1]}<span className="orange">.</span></span></h1>
@@ -31,12 +31,12 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
         <section className="studio shell" id="studio" aria-labelledby="studio-title">
-          <span className="section-kicker">{t.studioLabel}</span>
-          <Reveal><h2 id="studio-title">{t.values[0]}<br />{t.values[1]}<br /><span className="orange">{t.values[2]}</span></h2><p>{t.founders}</p><p className="studio-secondary">{t.about}</p><a className="studio-more" href={locale === "it" ? "/studio" : "/en/studio"}>{locale === "it" ? "Conosci lo studio" : "Meet the studio"} ↗</a></Reveal>
+          <Reveal className="home-studio-portrait"><Image src="/studio/founders-home.png" alt={locale === "it" ? "Barbara e Valentina, fondatrici di Viva!, al museo" : "Barbara and Valentina, founders of Viva!, at the museum"} width={1696} height={2120} sizes="(max-width:700px) 92vw, 30vw" /></Reveal>
+          <Reveal className="home-studio-copy"><span className="section-kicker">{t.studioLabel}</span><h2 id="studio-title">{t.values[0]}<br />{t.values[1]}<br /><span className="orange">{t.values[2]}</span></h2><p>{t.founders}</p><p className="studio-secondary">{t.about}</p><a className="studio-more" href={locale === "it" ? "/studio" : "/en/studio"}>{locale === "it" ? "Conosci lo studio" : "Meet the studio"} ↗</a></Reveal>
         </section>
         <section className="services shell" aria-labelledby="services-title">
           <div className="section-label"><h2 id="services-title">{t.servicesTitle}</h2><span>{t.expertise}</span></div>
-          {t.services.map((service, index) => <Reveal key={service.title}><div className="service-row"><span className="service-number">0{index + 1}</span><h3>{service.title}</h3><p>{service.text}</p></div></Reveal>)}
+          <div className="services-grid">{t.services.map((service, index) => <Reveal key={service.title}><div className="service-row"><Image className="service-art" src={`/services/${["identity-v2", "web", "content"][index]}.png`} alt="" width={320} height={320} sizes="(max-width:700px) 92vw, 30vw" /><h3>{(locale === "it" ? [["Identità e", "comunicazione"], ["Web design e", "sviluppo web"], ["Contenuti e", "campagne digitali"]] : [["Identity and", "communication"], ["Web design and", "development"], ["Content and", "digital campaigns"]])[index].map((line) => <span className="service-title-line" key={line}>{line}</span>)}</h3><p>{service.text}</p></div></Reveal>)}</div>
         </section>
       </main>
       <SiteFooter locale={locale} />

@@ -35,13 +35,13 @@ const studioCopy = {
 export function StudioPage({ locale }: { locale: Locale }) {
   const t = copy[locale]; const s = studioCopy[locale];
   return <>
-    <a href="#main" className="skip-link">{t.skip}</a><SiteHeader locale={locale} />
+    <a href="#main" className="skip-link">{t.skip}</a><SiteHeader locale={locale} current="studio" overlay />
     <StructuredData locale={locale} page="studio" /><main tabIndex={-1} id="main" className="studio-page">
-      <section className="studio-opening studio-image-opening" aria-labelledby="studio-page-title">
-        <Image src="/hero/viva-studio-v1.png" alt="" fill sizes="100vw" preload className="studio-hero-image" />
-        <div className="shell studio-hero-content">
+      <section className="hero hero-video" aria-labelledby="studio-page-title">
+        <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-studio-v2.png" alt="" fill sizes="100vw" preload className="studio-hero-image" /></div>
+        <div className="hero-content shell">
         <div className="eyebrow"><span>{t.studioLabel}</span><span>{t.city}</span></div>
-        <h1 id="studio-page-title">{s.title[0]}<br /><span className="orange">{s.title[1]}</span></h1>
+        <h1 id="studio-page-title"><span className="hero-line">{s.title[0]}</span><span className="hero-line">{s.title[1]}</span></h1><div className="hero-bottom"><a className="text-link" href="#people-title">{locale === "it" ? "Conosci lo studio" : "Meet the studio"} <span aria-hidden="true">↓</span></a></div>
         </div>
       </section>
       <div className="shell studio-introduction"><p className="studio-lead">{s.intro}</p></div>
