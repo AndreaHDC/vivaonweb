@@ -1,3 +1,4 @@
+import { HeroArtwork } from "./hero-artwork";
 import { StructuredData } from "./structured-data";
 import Image from "next/image";
 import { SiteHeader } from "./site-header";
@@ -38,7 +39,7 @@ export function StudioPage({ locale }: { locale: Locale }) {
     <a href="#main" className="skip-link">{t.skip}</a><SiteHeader locale={locale} current="studio" overlay />
     <StructuredData locale={locale} page="studio" /><main tabIndex={-1} id="main" className="studio-page">
       <section className="hero hero-video" aria-labelledby="studio-page-title">
-        <div className="hero-artwork" aria-hidden="true"><Image src="/hero/viva-studio-v2.png" alt="" fill sizes="100vw" preload className="studio-hero-image" /></div>
+        <HeroArtwork src="/hero/viva-studio-v2.png" />
         <div className="hero-content shell">
         <div className="eyebrow"><span>{t.studioLabel}</span><span>{t.city}</span></div>
         <h1 id="studio-page-title"><span className="hero-line">{s.title[0]}</span><span className="hero-line">{s.title[1]}</span></h1><div className="hero-bottom"><a className="text-link" href="#people-title">{locale === "it" ? "Conosci lo studio" : "Meet the studio"} <span aria-hidden="true">↓</span></a></div>
