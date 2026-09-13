@@ -7,7 +7,7 @@ import { Reveal } from "./reveal";
 import { copy, type Locale } from "@/content/translations";
 const studioCopy = {
   it: {
-    title: ["Occhi nuovi.", "Idee condivise."],
+    title: ["Occhi nuovi,", "idee condivise."],
     intro: "Comunicazione, design e sviluppo web per la cultura e le imprese. Diamo alle storie una forma da riconoscere, esplorare e vivere.",
     people: "Due nomi, uno studio.",
     approach: "Il nostro approccio", question: "Ogni storia merita la sua forma.",
@@ -20,7 +20,7 @@ const studioCopy = {
     ], proof: "Le idee, messe in pratica.", projects: "Guarda i progetti",
   },
   en: {
-    title: ["Fresh eyes.", "Shared ideas."],
+    title: ["Fresh eyes,", "shared ideas."],
     intro: "Communication, design and web development for culture and business. Giving stories a form that people can recognise, explore and experience.",
     people: "Two names, one studio.",
     approach: "Our approach", question: "Every story deserves its own form.",
@@ -42,7 +42,7 @@ export function StudioPage({ locale }: { locale: Locale }) {
         <HeroArtwork src="/hero/viva-studio-v2.png" />
         <div className="hero-content shell">
         <div className="eyebrow"><span>{t.studioLabel}</span><span>{t.city}</span></div>
-        <h1 id="studio-page-title"><span className="hero-line">{s.title[0]}</span><span className="hero-line">{s.title[1]}</span></h1><div className="hero-bottom"><a className="text-link" href="#people-title">{locale === "it" ? "Conosci lo studio" : "Meet the studio"} <span aria-hidden="true">↓</span></a></div>
+        <h1 id="studio-page-title"><span className="hero-line">{s.title[0]}</span><span className="hero-line">{s.title[1].replace(/\.$/, "")}<span className="orange">.</span></span></h1><div className="hero-bottom"><a className="text-link" href="#people-title">{locale === "it" ? "Conosci lo studio" : "Meet the studio"} <span aria-hidden="true">↓</span></a></div>
         </div>
       </section>
       <div className="shell studio-introduction"><p className="studio-lead">{s.intro}</p></div>
