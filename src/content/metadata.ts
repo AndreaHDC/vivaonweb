@@ -6,7 +6,7 @@ export function homeMetadata(locale: Locale): Metadata {
   const url = locale === "it" ? "https://vivaonweb.com/" : "https://vivaonweb.com/en";
   return {
     icons: { icon: [{ url: "/brand/favicon.png", type: "image/png", sizes: "64x64" }], apple: [{ url: "/brand/apple-touch-icon.png", sizes: "180x180" }] },
-    twitter: { card: "summary_large_image", images: ["https://vivaonweb.com/hero/viva-home-v2.png"] },
+    twitter: { card: "summary_large_image", images: ["https://vivaonweb.com/hero/viva-home-orange-v1.png"] },
     title: text.title,
     description: text.description,
     robots: { index: false, follow: false },
@@ -14,7 +14,7 @@ export function homeMetadata(locale: Locale): Metadata {
       canonical: url,
       languages: { it: "https://vivaonweb.com/", en: "https://vivaonweb.com/en", "x-default": "https://vivaonweb.com/" },
     },
-    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-home-v2.png", width: 1672, height: 941, alt: "Viva! — Comunicazione, design e sviluppo web" }], title: text.title, description: text.description, url, siteName: "Viva!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
+    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-home-orange-v1.png", width: 1672, height: 941, alt: "Viva! — Comunicazione, design e sviluppo web" }], title: text.title, description: text.description, url, siteName: "Viva!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
   };
 }
 

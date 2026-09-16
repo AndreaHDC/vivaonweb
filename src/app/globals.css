@@ -88,6 +88,18 @@ html.lenis,html.lenis body{scroll-behavior:auto!important}
 .hero-artwork img{object-fit:cover;object-position:center}
 .hero-video:has(.hero-artwork)::after{background:linear-gradient(180deg,rgba(0,0,0,.22),rgba(0,0,0,.08) 45%,rgba(0,0,0,.55))}
 
+/* Keep the produce label clear of the headline, including on narrow screens. */
+.hero-orange h1{font-size:clamp(44px,5.2vw,88px);max-width:55%}
+@media(max-width:700px){
+  .hero.hero-orange{background:#493b1b}
+  .hero-orange .hero-content{justify-content:flex-start;padding-bottom:48px}
+  .hero-orange h1{font-size:clamp(36px,9vw,60px);max-width:100%;margin:32px 0 0}
+  .hero-orange .hero-artwork{top:340px;bottom:auto;height:390px;transform:none!important}
+  .hero-orange .hero-artwork img{object-position:88% center}
+  .hero-orange.hero-video:has(.hero-artwork)::after{background:linear-gradient(180deg,#493b1b 320px,transparent 390px,transparent 640px,#493b1b 735px)}
+  .hero-orange .hero-bottom{margin-top:425px}
+}
+
 .site-header.interior-header{position:relative;color:var(--foreground)}
 .interior-header .language-switch{border-color:var(--line)}
 .interior-header .language-switch a{color:var(--muted)}

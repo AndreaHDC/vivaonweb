@@ -17,8 +17,8 @@ export function HomePage({ locale }: { locale: Locale }) {
       <a href="#main" className="skip-link">{t.skip}</a>
       <SiteHeader locale={locale} overlay />
       <StructuredData locale={locale} page="home" /><main tabIndex={-1} id="main">
-        <section className="hero hero-video" aria-labelledby="hero-title">
-          <HeroArtwork src="/hero/viva-home-v2.png" />
+        <section className="hero hero-video hero-orange" aria-labelledby="hero-title">
+          <HeroArtwork src="/hero/viva-home-orange-v1.png" />
           <div className="hero-content shell">
           <div className="eyebrow"><span>{t.ideas}</span><span>{t.city}</span></div>
           <h1 id="hero-title"><span className="hero-line">{t.headline[0]}</span><span className="hero-line">{t.headline[1]}<span className="orange">.</span></span></h1>

@@ -1,0 +1,6 @@
+Generated with the built-in image_gen tool.
+Reference: public/brand/viva-original.png
+
+Use case: product-mockup. Asset type: wide 16:9 website hero photograph.
+Create a photorealistic real vivid orange fruit, large on the right half, with natural dimpled orange peel, on a simple warm muted olive-brown studio backdrop and surface. Soft directional daylight, realistic contact shadow, fresh tactile editorial product photography, not CGI. The left 50 percent is quiet dark warm negative space for white website headline added later. Fruit centered around 75 percent width, fully within frame, occupies about 65 percent height. One small natural green leaf optional only if natural to stem.
+Reference image: existing Viva brand logo. Use its dark green oval sticker design with thin pale rim and exact tall condensed white lettering "VIVA!" and smaller "Fresh Squeezed Ideas". Apply this as a believable paper produce label directly on front of orange, following subtle curvature, prominently legible. Preserve reference logo typography and colors as closely as possible. Do not reproduce the polygonal orange in reference; the fruit must look like a real photographed orange. No other text, no website UI, no borders, no watermark. Elegant simple composition, saturated orange against warm restrained background.
