@@ -3,7 +3,7 @@ import type { Project } from "@/content/projects";
 
 import { studioFaq } from "@/content/studio-faq";
 
-const base = "https://vivaonweb.com";
+const base = "https://www.vivaonweb.com";
 export function StructuredData({ locale, page, project }: { locale: Locale; page: "home" | "studio" | "contact" | "project"; project?: Project }) {
   const t = copy[locale];
   const root = locale === "it" ? "" : "/en";

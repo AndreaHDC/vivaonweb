@@ -213,3 +213,5 @@ body:has(.recaptcha-notice) .grecaptcha-badge{visibility:hidden}
 .studio-faq-item p{font-size:18px;line-height:1.65;margin:0}
 .studio-faq-list>.studio-more{margin-top:30px}
 @media(max-width:700px){.studio-faq{grid-template-columns:1fr;gap:10px;padding-bottom:65px}.studio-faq-item{padding-block:24px}}
+
+.studio-faq-item a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}

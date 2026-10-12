@@ -52,7 +52,7 @@ export function StudioPage({ locale }: { locale: Locale }) {
       <section className="services shell studio-expertise" aria-labelledby="services-title"><div className="section-label"><h2 id="services-title">{t.servicesTitle}</h2><span>{t.expertise}</span></div>{t.services.map(service => <Reveal key={service.title}><div className="studio-service"><h3>{service.title}</h3><p>{service.text}</p></div></Reveal>)}<div className="studio-proof"><h2>{s.proof}</h2><a className="studio-more" href={`${locale === "it" ? "/" : "/en"}#progetti`}>{s.projects} ↗</a></div></section>
       <section id="faq" className="studio-faq shell" aria-labelledby="faq-title">
         <h2 id="faq-title">{locale === "it" ? "Domande frequenti." : "Frequently asked questions."}</h2>
-        <div className="studio-faq-list">{studioFaq[locale].map(({ question, answer }) => <article key={question} className="studio-faq-item"><h3>{question}</h3><p>{answer}</p></article>)}
+        <div className="studio-faq-list">{studioFaq[locale].map(({ question, answer }) => <article key={question} className="studio-faq-item"><h3>{question}</h3><p>{answer.split("ROAR Creative").map((part, index) => <span key={index}>{index > 0 && <a href="https://www.roarcreativellc.com/" target="_blank" rel="noopener noreferrer" aria-label={locale === "it" ? "ROAR Creative (si apre in una nuova scheda)" : "ROAR Creative (opens in a new tab)"}>ROAR Creative</a>}{part}</span>)}</p></article>)}
           <a className="studio-more" href={`${locale === "it" ? "" : "/en"}/contatti`}>{locale === "it" ? "Parliamone" : "Let’s talk"} ↗</a>
         </div>
       </section>
