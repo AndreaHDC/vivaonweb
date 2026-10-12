@@ -14,7 +14,7 @@ export function homeMetadata(locale: Locale): Metadata {
       canonical: url,
       languages: { it: "https://vivaonweb.com/", en: "https://vivaonweb.com/en", "x-default": "https://vivaonweb.com/" },
     },
-    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-home-orange-v1.png", width: 1672, height: 941, alt: "Viva! — Comunicazione, design e sviluppo web" }], title: text.title, description: text.description, url, siteName: "Viva!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
+    openGraph: { images: [{ url: "https://vivaonweb.com/hero/viva-home-orange-v1.png", width: 1672, height: 941, alt: "Viva! — Comunicazione, design e sviluppo web" }], title: text.title, description: text.description, url, siteName: "VIVA!", type: "website", locale: locale === "it" ? "it_IT" : "en_US", alternateLocale: locale === "it" ? "en_US" : "it_IT" },
   };
 }
 
@@ -26,8 +26,7 @@ export function studioMetadata(locale: Locale): Metadata {
   const url = locale === "it" ? it : en;
   return { ...homeMetadata(locale), title, description,
     alternates: { canonical: url, languages: { it, en, "x-default": it } },
-    openGraph: { ...homeMetadata(locale).openGraph, title, description, url, images: [{ url: "https://vivaonweb.com/hero/viva-studio-v2.png" }] },
-    twitter: { card: "summary_large_image", images: ["https://vivaonweb.com/hero/viva-studio-v2.png"] },
+    openGraph: { ...homeMetadata(locale).openGraph, title, description, url },
   };
 }
 
@@ -35,7 +34,7 @@ export function contactMetadata(locale: Locale): Metadata {
  const title=locale === "it" ? "Contatti — Viva! | Parliamo del tuo progetto" : "Contact — Viva! | Let’s talk about your project";
  const description=locale === "it" ? "Raccontaci la tua idea. Contatta Viva!, studio di comunicazione, design e sviluppo web a Milano." : "Tell us about your idea. Contact Viva!, a communication, design and web development studio in Milan.";
  const it="https://vivaonweb.com/contatti",en="https://vivaonweb.com/en/contatti",url=locale === "it" ? it : en;
- return {...homeMetadata(locale),title,description,alternates:{canonical:url,languages:{it,en,"x-default":it}},openGraph:{...homeMetadata(locale).openGraph,title,description,url,images:[{url:"https://vivaonweb.com/hero/viva-contact-v3.png"}]},twitter:{card:"summary_large_image",images:["https://vivaonweb.com/hero/viva-contact-v3.png"]}};
+ return {...homeMetadata(locale),title,description,alternates:{canonical:url,languages:{it,en,"x-default":it}},openGraph:{...homeMetadata(locale).openGraph,title,description,url}};
 }
 
 export function projectMetadata(project: import("./projects").Project, locale: Locale): Metadata {

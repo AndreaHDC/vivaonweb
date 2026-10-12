@@ -5,6 +5,7 @@ import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
 import { Reveal } from "./reveal";
 import { copy, type Locale } from "@/content/translations";
+import { studioFaq } from "@/content/studio-faq";
 const studioCopy = {
   it: {
     title: ["Occhi nuovi,", "idee condivise."],
@@ -49,6 +50,12 @@ export function StudioPage({ locale }: { locale: Locale }) {
       <section className="studio-people shell" aria-labelledby="people-title"><figure className="founders-photo"><Image src="/studio/barbara-valentina.png" alt={locale === "it" ? "Barbara Vitale e Valentina Pagani Donadelli insieme in una sala museale" : "Barbara Vitale and Valentina Pagani Donadelli together in a museum gallery"} width={1592} height={1700} sizes="(max-width: 700px) 92vw, 40vw" /></figure><Reveal><h2 id="people-title">{s.people}</h2><p className="studio-lead">{t.founders}</p><p>{t.about}</p></Reveal></section>
       <section className="studio-method" aria-labelledby="method-title"><div className="shell"><span className="section-kicker">{s.approach}</span><Reveal><h2 id="method-title">{s.question}</h2><div className="method-copy"><p>{s.text}</p><p>{s.collaboration}</p></div></Reveal><div className="studio-principles">{s.principles.map(p => <Reveal key={p.title}><h3>{p.title}</h3><p>{p.text}</p></Reveal>)}</div></div></section>
       <section className="services shell studio-expertise" aria-labelledby="services-title"><div className="section-label"><h2 id="services-title">{t.servicesTitle}</h2><span>{t.expertise}</span></div>{t.services.map(service => <Reveal key={service.title}><div className="studio-service"><h3>{service.title}</h3><p>{service.text}</p></div></Reveal>)}<div className="studio-proof"><h2>{s.proof}</h2><a className="studio-more" href={`${locale === "it" ? "/" : "/en"}#progetti`}>{s.projects} ↗</a></div></section>
+      <section id="faq" className="studio-faq shell" aria-labelledby="faq-title">
+        <h2 id="faq-title">{locale === "it" ? "Domande frequenti." : "Frequently asked questions."}</h2>
+        <div className="studio-faq-list">{studioFaq[locale].map(({ question, answer }) => <article key={question} className="studio-faq-item"><h3>{question}</h3><p>{answer}</p></article>)}
+          <a className="studio-more" href={`${locale === "it" ? "" : "/en"}/contatti`}>{locale === "it" ? "Parliamone" : "Let’s talk"} ↗</a>
+        </div>
+      </section>
     </main><SiteFooter locale={locale} />
   </>;
 }
