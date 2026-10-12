@@ -1,3 +1,4 @@
+import { verifyRecaptcha } from "@/lib/recaptcha";
 export const runtime = "nodejs";
 export async function POST(request: Request) {
  const fail = (status:number) => Response.json({ok:false},{status});
@@ -18,6 +19,8 @@ export async function POST(request: Request) {
  if(!key || !domain || !from || !to)return fail(503);
  const recipients=to.split(",").map(value=>value.trim()).filter(Boolean);
  if(!recipients.length || recipients.some(value=>! /^[^\s@,]+@[^\s@,]+\.[^\s@,]+$/.test(value)))return fail(503);
+ if(!process.env.RECAPTCHA_SECRET_KEY)return fail(503);
+ try { if(!await verifyRecaptcha(field("recaptchaToken"),new URL(request.url).hostname))return fail(403); } catch { return fail(503); }
  const body=new FormData();body.set("from",from);for(const recipient of recipients)body.append("to",recipient);body.set("subject","Viva! — Nuova richiesta dal sito");body.set("h:Reply-To",email);body.set("text",`Nome: ${name}\nEmail: ${email}\nOrganizzazione: ${organisation || "—"}\n\n${message}`);body.set("o:tracking","no");body.set("o:tracking-clicks","no");body.set("o:tracking-opens","no");
  const host=process.env.MAILGUN_REGION === "EU" ? "api.eu.mailgun.net" : "api.mailgun.net";
  try{const response=await fetch(`https://${host}/v3/${encodeURIComponent(domain)}/messages`,{method:"POST",headers:{Authorization:`Basic ${Buffer.from(`api:${key}`).toString("base64")}`},body,signal:AbortSignal.timeout(15000)});if(!response.ok)return fail(502);return Response.json({ok:true});}catch{return fail(502);}

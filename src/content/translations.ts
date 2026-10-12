@@ -15,7 +15,7 @@ export const copy = {
       { title: "Web design e sviluppo", text: "Siti web, dal design allo sviluppo. Creiamo esperienze accessibili e intuitive, per unire persone e contenuti." },
       { title: "Contenuti e campagne", text: "Video, social e campagne digitali. Trasformiamo le storie in contenuti capaci di raggiungere il loro pubblico." },
     ],
-    next: "Il prossimo progetto", conversation: "Comincia da una conversazione.", contact: ["Facciamo spazio", "alla prossima idea"], footer: "Comunicazione, design e sviluppo web. Milano.", top: "Torna all’inizio", read: "Leggi il progetto", close: "Seleziona di nuovo il titolo per chiudere.", logo: "Viva! — Fresh Squeezed Ideas, logo originale con arancia",
+    next: "Il prossimo progetto", conversation: "Comincia da una conversazione.", contact: ["Facciamo spazio", "alla prossima idea"], footer: "Comunicazione, design e sviluppo web. Milano.", top: "Torna all’inizio", read: "Scopri il progetto", close: "Seleziona di nuovo il titolo per chiudere.", logo: "Viva! — Fresh Squeezed Ideas, logo originale con arancia",
     title: "Viva! — Studio di comunicazione, design e sviluppo web", description: "Identità, siti ed esperienze digitali per musei, istituzioni culturali e imprese. Scopri i progetti di Viva!, studio di comunicazione, design e sviluppo web a Milano.",
   },
   en: {

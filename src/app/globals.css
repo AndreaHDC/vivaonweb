@@ -190,3 +190,17 @@ html.lenis,html.lenis body{scroll-behavior:auto!important}
 }
 
 .service-title-line{display:block}
+
+/* Quiet project attribution, aligned with the closing navigation. */
+.case-credits-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,80px);margin:0;border-top:1px solid var(--line);padding-block:28px}
+.case-credits dt{font-size:17px;font-weight:600;line-height:1.4;margin-bottom:9px}
+.case-credits dd{margin:0;font-size:13px;line-height:1.65;color:var(--muted)}
+.case-credits dd>span{display:block}
+.case-credits a{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:5px;transition:text-decoration-color 180ms}
+.case-credits a:hover{text-decoration-color:currentColor}
+@media(max-width:700px){.case-credits-grid{grid-template-columns:1fr;gap:24px}}
+
+body:has(.recaptcha-notice) .grecaptcha-badge{visibility:hidden}
+.contact-form-container{min-width:0}
+.contact-body .recaptcha-notice{font-size:11px;line-height:1.5;color:var(--muted);margin:12px 0 0;max-width:560px}
+.recaptcha-notice a{text-decoration:underline;text-underline-offset:3px}
