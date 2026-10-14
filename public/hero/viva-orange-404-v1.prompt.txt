@@ -1,0 +1,11 @@
+Generated with the built-in image_gen tool.
+Reference: public/brand/viva-original.png
+
+Use case: ads-marketing.
+Asset type: editorial photo for Viva design studio's playful 404 error webpage, wide 16:9 landscape composition.
+Primary request: a real bright orange fruit that fell from an orange tree and splattered on the ground. Show one orange unmistakably smashed on impact: ruptured peel, flattened juicy segments, pulp and small radial splashes of orange juice on the ground. Humorous and tactile, never grotesque.
+Scene/backdrop: warm ivory limestone courtyard surface, a cropped real orange tree trunk at the far right edge and a subtle leafy branch with a couple of intact oranges in the upper right to suggest where the fruit fell. Spacious clean warm pale cream background, no horizon clutter.
+Composition: smashed fruit in the lower right quarter, occupy about one third of image width. Keep entire left 45 percent and upper middle quiet pale cream empty negative space for website text added separately. Ground and backdrop blend naturally. Full fruit and splashes inside frame.
+Style/medium: premium photorealistic editorial still-life photography, natural Mediterranean afternoon light, rich real orange peel texture, translucent wet citrus pulp, believable soft shadows. Crisp and art-directed, not illustration, not CGI.
+Reference image is the original Viva logo. An oval dark green paper produce sticker on the broken orange peel, visibly bent with the peel, reads exactly "VIVA!" in white condensed capitals. Smaller "Fresh Squeezed Ideas" optional if accurately legible. Use the oval label only, not the polygonal orange illustration.
+Constraints: photograph only, no page text, no 404 numerals, no captions, no UI, no borders, no watermark. Strong contrast between orange, deep leaf green and warm ivory.

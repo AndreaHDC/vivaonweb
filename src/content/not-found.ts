@@ -1,0 +1,26 @@
+export const notFoundCopy = {
+  it: {
+    title: "404 — Pagina non trovata | Viva!",
+    code: "Pagina non trovata",
+    exclamation: "Ops!",
+    question: "Forse ti sei perso?",
+    description: "Questa pagina è caduta dall’albero. Raccogliamo le idee e ripartiamo.",
+    home: "Torniamo alla home",
+    projects: "Oppure esplora i progetti",
+    image: "Un’arancia caduta da un albero, spetasciata a terra con succo, polpa e il bollino Viva! sulla buccia.",
+    language: "Lingua",
+    skip: "Vai al contenuto",
+  },
+  en: {
+    title: "404 — Page not found | Viva!",
+    code: "Page not found",
+    exclamation: "Oops!",
+    question: "Lost your way?",
+    description: "This page fell from the tree. Let’s gather our ideas and start fresh.",
+    home: "Back to the homepage",
+    projects: "Or explore our projects",
+    image: "An orange fallen from a tree, smashed on the ground with juice, pulp and a Viva! sticker on its peel.",
+    language: "Language",
+    skip: "Skip to content",
+  },
+} as const;
