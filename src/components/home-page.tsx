@@ -22,13 +22,13 @@ export function HomePage({ locale }: { locale: Locale }) {
           <div className="hero-content shell">
           <div className="eyebrow"><span>{t.ideas}</span><span>{t.city}</span></div>
           <h1 id="hero-title"><span className="hero-line">{t.headline[0]}</span><span className="hero-line">{t.headline[1]}<span className="orange">.</span></span></h1>
-          <div className="hero-bottom"><a className="text-link" href="#progetti">{t.explore} <span aria-hidden="true">↓</span></a><p>{t.intro[0]}<br />{t.intro[1]}</p></div>
+          <div className="hero-bottom"><a className="text-link" href="#progetti">{t.explore} <span aria-hidden="true">↓</span></a><p>{t.intro}</p></div>
         </div>
         </section>
         <section className="work shell" id="progetti" aria-labelledby="work-title">
-          <Reveal><div className="work-intro"><h2 id="work-title">{t.workTitle}</h2><p>{t.workIntro}</p></div></Reveal>
+          <Reveal><div className="work-intro"><h2 id="work-title">{t.workTitle.replace(/\.$/, "")}<span className="orange">.</span></h2><p>{t.workIntro}</p></div></Reveal>
           <div className="project-grid">
-            {projects.map((project, index) => <Reveal className="project-slot" key={project.slug}><ProjectCard project={project} index={index} locale={locale} /></Reveal>)}
+            {projects.map((project, index) => <div className="project-slot" key={project.slug}><Reveal className="project-reveal"><ProjectCard project={project} index={index} locale={locale} /></Reveal></div>)}
           </div>
         </section>
         <section className="studio shell" id="studio" aria-labelledby="studio-title">
@@ -37,7 +37,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         </section>
         <section className="services shell" aria-labelledby="services-title">
           <div className="section-label"><h2 id="services-title">{t.servicesTitle}</h2><span>{t.expertise}</span></div>
-          <div className="services-grid">{t.services.map((service, index) => <Reveal key={service.title}><div className="service-row"><Image className="service-art" src={`/services/${["identity-v2", "web", "content"][index]}.png`} alt="" width={320} height={320} sizes="(max-width:700px) 92vw, 30vw" /><h3>{(locale === "it" ? [["Identità e", "comunicazione"], ["Web design e", "sviluppo web"], ["Contenuti e", "campagne digitali"]] : [["Identity and", "communication"], ["Web design and", "development"], ["Content and", "digital campaigns"]])[index].map((line) => <span className="service-title-line" key={line}>{line}</span>)}</h3><p>{service.text}</p></div></Reveal>)}</div>
+          <div className="services-grid">{t.services.map((service, index) => <Reveal key={service.title}><div className="service-row"><Image className="service-art" src={`/services/${["orange-identity-v1", "orange-web-v1", "orange-content-v1"][index]}.png`} alt={service.imageAlt} width={1254} height={1254} sizes="(max-width:700px) 92vw, 30vw" /><h3>{(locale === "it" ? [["Identità e", "comunicazione"], ["Web design e", "sviluppo web"], ["Contenuti e", "campagne digitali"]] : [["Identity and", "communication"], ["Web design and", "development"], ["Content and", "digital campaigns"]])[index].map((line) => <span className="service-title-line" key={line}>{line}</span>)}</h3><p>{service.text}</p></div></Reveal>)}</div>
         </section>
       </main>
       <SiteFooter locale={locale} />
