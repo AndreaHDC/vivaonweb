@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import localFont from "next/font/local";
 import { NotFoundPage } from "@/components/not-found-page";
 import { notFoundCopy } from "@/content/not-found";
+import { SiteScripts } from "@/components/site-scripts";
 import "./globals.css";
 
 const inter = localFont({
@@ -23,5 +24,5 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function GlobalNotFound() {
   const locale = await getLocale();
-  return <html lang={locale} className={inter.variable}><body><NotFoundPage locale={locale} /></body></html>;
+  return <html lang={locale} className={inter.variable}><body><SiteScripts locale={locale} standalone /><NotFoundPage locale={locale} /></body></html>;
 }
