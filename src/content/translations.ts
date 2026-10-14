@@ -2,7 +2,7 @@ export type Locale = "it" | "en";
 export const copy = {
   it: {
     skip: "Vai al contenuto", nav: "Navigazione principale", projects: "Progetti", studio: "Studio", talk: "Parliamone",
-    ideas: "Comunicazione, design, sviluppo web.", city: "Viva! / Milano", headline: ["La cultura,", "in nuove forme"], explore: "Esplora i progetti",
+    ideas: "Comunicazione, design, sviluppo web.", city: "Viva! / Milano", headline: ["Su misura,", "dalla strategia al design, codice compreso"], explore: "Esplora i progetti",
     intro: ["Diamo forma a identità, siti e racconti.", "Mettiamo in relazione luoghi, storie e persone."], latest: "Ultimi progetti",
     workTitle: "Le idee prendono forma.",
     workIntro: "Siti, identità e racconti per musei, luoghi della cultura e imprese. Ogni progetto è un modo diverso di mettere in relazione una storia e il suo pubblico.",
@@ -20,7 +20,7 @@ export const copy = {
   },
   en: {
     skip: "Skip to content", nav: "Main navigation", projects: "Projects", studio: "Studio", talk: "Let’s talk",
-    ideas: "Communication, design, web development.", city: "Viva! / Milan", headline: ["Culture,", "in new forms"], explore: "Explore our projects",
+    ideas: "Communication, design, web development.", city: "Viva! / Milan", headline: ["Tailor-made,", "from strategy to design, code included"], explore: "Explore our projects",
     intro: ["We shape identities, websites and stories.", "Connecting places, stories and people."], latest: "Latest projects",
     workTitle: "Ideas take shape.",
     workIntro: "Websites, identities and stories for museums, cultural spaces and businesses. Each project finds a different way to connect a story with its audience.",

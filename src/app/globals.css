@@ -93,10 +93,10 @@ html.lenis,html.lenis body{scroll-behavior:auto!important}
 @media(max-width:700px){
   .hero.hero-orange{background:#493b1b}
   .hero-orange .hero-content{justify-content:flex-start;padding-bottom:48px}
-  .hero-orange h1{font-size:clamp(36px,9vw,60px);max-width:100%;margin:32px 0 0}
-  .hero-orange .hero-artwork{top:340px;bottom:auto;height:390px;transform:none!important}
+  .hero-orange h1{font-size:clamp(30px,7.5vw,50px);max-width:100%;margin:32px 0 0}
+  .hero-orange .hero-artwork{top:420px;bottom:auto;height:390px;transform:none!important}
   .hero-orange .hero-artwork img{object-position:88% center}
-  .hero-orange.hero-video:has(.hero-artwork)::after{background:linear-gradient(180deg,#493b1b 320px,transparent 390px,transparent 640px,#493b1b 735px)}
+  .hero-orange.hero-video:has(.hero-artwork)::after{background:linear-gradient(180deg,#493b1b 400px,transparent 470px,transparent 720px,#493b1b 815px)}
   .hero-orange .hero-bottom{margin-top:425px}
 }
 
